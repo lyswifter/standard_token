@@ -4,16 +4,7 @@
   "canisters": {
     "standard_token": {
       "type": "motoko",
-      "main": "src/standard_token/main.mo"
-    },
-    "standard_token_assets": {
-      "type": "assets",
-      "source": [
-        "src/standard_token_assets/assets"
-      ],
-      "dependencies": [
-        "standard_token"
-      ]
+      "main": "src/standard_token/standard.mo"
     }
   },
   "defaults": {
