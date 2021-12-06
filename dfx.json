@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "dfx": "0.8.1",
+  "canisters": {
+    "standard_token": {
+      "type": "motoko",
+      "main": "src/standard_token/main.mo"
+    },
+    "standard_token_assets": {
+      "type": "assets",
+      "source": [
+        "src/standard_token_assets/assets"
+      ],
+      "dependencies": [
+        "standard_token"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}
